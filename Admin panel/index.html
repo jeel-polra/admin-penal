@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="body">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-darkblue">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="col-4 d-flex align-items-center nav-text ">
+                        <a href="#" class="border-end ps-3 border-dark">
+                            <i class="fa-solid fa-bars text-white-50 fs-4 pe-3"></i></a>
+
+                        <a class="navbar-brand text-white px-3 fs-2" href="#">ngx-admin</a>
+
+                        <select class="border border-2 rounded-3 border-primary btn-darkblue text-light py-2 px-2">
+                            <option class="text-light">Dark</option>
+                            <option class="text-light">Light</option>
+                            <option class="text-light">Cosmic</option>
+                            <option class="text-light">Corporate</option>
+                            <option class="text-light">Material Light</option>
+                            <option class="text-light">Material dark</option>
+                        </select>
+                    </div>
+
+                    <div class="col-8 d-flex justify-content-end align-items-center">
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item"><a class="nav-link active text-white" href="#">Support us:</a></li>
+                            <li> <button class="btn bg-white p-0 px-2"><i class="fa-brands fa-github"></i>star</button>
+                            </li>
+                            <li class="pe-3"> <button class="btn bg-white p-0 px-1 ms-2">24,374</button></li>
+                            <li class="text-white px-3">
+                                <i class="fa-solid fa-download text-white-50 pe-2"></i>470.000
+                            </li>
+                            <li class="px-3 border-left"> <button
+                                    class="btn text-white-50 text-uppercase p-0 px-1 ms-1"><i
+                                        class="fa-regular fa-envelope pe-2"></i> contact@akveo.com </button></li>
+                            <li class="text-white px-3 border-left"><i
+                                    class="fa-solid fa-magnifying-glass text-white-50"></i></li>
+                            <li class="text-white px-3 border-left"><i
+                                    class="fa-regular fa-envelope fs-5 text-white-50"></i></li>
+                            <li class="text-white px-3 border-left"><i
+                                    class="fa-regular fa-bell fs-5 text-white-50"></i></li>
+                            <li class="text-white px-3 border-left"><img src="img/nick.webp" class="rounded-circle me-1"
+                                    width="40" alt="">
+                                Nick Jones </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 p-0">
+                    <div class="box bg-darkblue">
+                        <ul class="p-0">
+                            <li class="ps-4 py-3 border1"><a href="#" class="text-primary">
+                                    <i class="fa-solid fa-cart-shopping pe-2"></i>E-commerce</a></li>
+                            <li class="ps-4 py-3 border1"><a href="#" class="text-white">
+                                    <i class="fa-solid fa-house text-white-50 pe-2"></i>loT Dashboard</a></li>
+                            <li class="ps-4 py-3 border1 text-white-50">FEATURES</li>
+
+                            <div class="accordion " id="accordionExample">
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-solid fa-table-columns text-white-50 pe-2"></i>Layout</a>
+                                        </button>
+                                    </h2>
+
+                                    <div id="collapseOne" class="accordion-collapse collapse "
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Stepper</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">List</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Infinite
+                                                        List</a></li>
+                                                <li class="py-3 text-white border1"><a href="#"
+                                                        class="text-white">Accordion </a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Tabs </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1 " type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne1">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-solid fa-pen text-white-50 pe-2"></i>Forms</a>
+                                        </button>
+                                    </h2>
+
+                                    <div id="collapseOne1" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Form Inputs</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Form Layouts</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Buttons</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Datepicker </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0 bg-darkblue border1">
+                                    <h2 class="accordion-header border-bottom1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne2"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-solid fa-grip-vertical text-white-50 pe-2"></i>UI
+                                                Features</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne2" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Grid</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Icons</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Typography</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Animated
+                                                        Searches </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0 bg-darkblue border1">
+                                    <h2 class="accordion-header border-bottom1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne3"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-solid fa-window-maximize text-white-50 pe-2"></i>Modal &
+                                                Overlays</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne3" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Dialog</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Window</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Popover</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Toastr</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Tooltip</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0 bg-darkblue border1">
+                                    <h2 class="accordion-header border-bottom1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1 " type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne4"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-regular fa-comment-dots text-white-50 pe-2"></i>Modal &
+                                                Overlays</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne4" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Calendar</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Progress Bar</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Spinner</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Alert</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Calendar Kit</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Chat</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne5"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-regular fa-map text-white-50 pe-2"></i>Maps</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne5" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Google Maps</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Leaflet Maps</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Bubble Maps</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Search Maps</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne6"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-solid fa-chart-pie text-white-50 pe-2"></i>Charts</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne6" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Echarts</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Charts.js</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">D3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne7"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-solid fa-t text-white-50 pe-2"></i>Editors</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne7" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">TinyMCE</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">CKEditor</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne8"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i class="fa-solid fa-border-all text-white-50 pe-2"></i>Tables &
+                                                Data</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne8" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Smart Table</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Tree Grid</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne9"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white">
+                                                <i
+                                                    class="fa-solid fa-shuffle text-white-50 pe-2"></i></i>Miscellaneous</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne9" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">404</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header border1" id="headingOne">
+                                        <button class="accordion-button bg-darkblue border1" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne10"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="#" class="text-white"><i
+                                                    class="fa-solid fa-lock text-white-50 pe-2"></i>Auth</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne10" class="accordion-collapse collapse "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-darkblue py-0 px-4">
+                                            <ul class="slide m-0 p-0 ">
+                                                <li class="py-3 border1"><a href="#" class="text-white">Login</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Register</a>
+                                                </li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Request
+                                                        Password</a></li>
+                                                <li class="py-3 border1"><a href="#" class="text-white">Reset
+                                                        Password</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-10 ps-4 pe-4 pt-4 pb-3">
+                    <div class="col-12 mb-4 row">
+                        <div class="col-6">
+                            <div class="box bg-darkblue p-3 d-flex align-items-center rounded-2">
+                                <div class="icon bg-primary d-flex align-items-center justify-content-center rounded-2">
+                                    <i class="fa-solid fa-swatchbook text-white fs-1"></i>
+                                </div>
+                                <h6 class="text-white fs-5 ps-3">Hire us to customize ngx-admin</h6>
+                                <button class="btn1 btn-pink border-0 rounded-2 ms-auto">
+                                    <a href="#" class="text-white fs-bold">CONTACT US</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box bg-darkblue p-3 d-flex align-items-center rounded-2">
+                                <div
+                                    class="icon bg-primary d-flex align-items-center justify-content-center rounded-2 me-2">
+                                    <i class="fa-solid fa-suitcase text-white fs-1"></i>
+                                </div>
+                                <h6 class="text-white fs-5 ps-3">Documentation and
+                                    customization articles</h6>
+                                <button class="btn1 btn-pink border-0 rounded-2 ms-auto">
+                                    <a href="#" class="text-white fs-bold">LEARN MORE</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 row">
+                            <div class="col-6 bg-darkblue mb-3">
+                                <div class="profit d-flex justify-content-between">
+                                    <p class="text-white p-3 m-0"><span class="fw-bold pe-2">$</span>Profit</p>
+                                    <div class="icon1">
+                                        <i class="fa-solid fa-chevron-right text-white fs-6 p-3"></i>
+                                    </div>
+                                </div>
+                                <div id="container" style="height: 220px"></div>
+                            </div>
+                            <div class="col-6 bg-darkblue mb-3">
+                                <div class="box d-flex border-bottom border-dark justify-content-between p-3">
+                                    <select class="border-2 border-dark rounded-3 btn-darkblue text-light px-2">
+                                        <option selected>Bitcoin</option>
+                                        <option value="1">Tether</option>
+                                        <option value="2">Ethereum</option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-right text-white fs-6 p-3"></i>
+                                </div>
+                                <div id="container-1" style="height: 220px"></div>
+                            </div>
+                            <div class="col-12 bg-darkblue">
+                                <div
+                                    class="box d-flex border-bottom border-dark align-items-center justify-content-between p-4">
+                                    <span class="text-white"> Traffic</span>
+                                    <span class="text-white ms-auto">
+                                        <select
+                                            class="border-2 border-dark rounded-3 btn-darkblue text-light py-2 px-3">
+                                            <option selected>week</option>
+                                            <option value="1">month</option>
+                                            <option value="2">year</option>
+                                        </select>
+                                    </span>
+                                    <i class="fa-solid fa-angle-up py-3 text-white ms-3"></i>
+                                </div>
+                                <div class="menu">
+                                    <div class="border-bottom border-dark p-3 d-flex justify-content-between">
+                                        <span class="text-white">Mon</span>
+                                        <span class="text-white">259</span>
+                                        <span class="up"><i class="fa-solid fa-caret-up"></i>5%</span>
+                                        <span class="text-white-50">
+                                            Sun
+                                            Mon
+                                        </span>
+                                    </div>
+
+                                    <div class="border-bottom border-dark p-3 d-flex justify-content-between">
+                                        <span class="text-white">Tue</span>
+                                        <span class="text-white">780</span>
+                                        <span class="down"><i class="fa-solid fa-caret-down"></i>3%</span>
+                                        <span class="text-white-50">
+                                            Mon
+                                            Tue
+                                        </span>
+                                    </div>
+
+                                    <div class="border-bottom border-dark p-3 d-flex justify-content-between">
+                                        <span class="text-white">Wed</span>
+                                        <span class="text-white">734</span>
+                                        <span class="up"><i class="fa-solid fa-caret-up"></i>39%</span>
+                                        <span class="text-white-50">
+                                            Tue
+                                            Wed
+                                        </span>
+                                    </div>
+
+                                    <div class="border-bottom border-dark p-3 d-flex justify-content-between">
+                                        <span class="text-white">Thu</span>
+                                        <span class="text-white">514</span>
+                                        <span class="down"><i class="fa-solid fa-caret-down"></i>59%</span>
+                                        <span class="text-white-50">
+                                            Wed
+                                            Thu
+                                        </span>
+                                    </div>
+
+                                    <div class="border-bottom border-dark p-3 d-flex justify-content-between">
+                                        <span class="text-white">Fri</span>
+                                        <span class="text-white">319</span>
+                                        <span class="up"><i class="fa-solid fa-caret-up"></i>31%</span>
+                                        <span class="text-white-50">
+                                            The
+                                            Fri
+                                        </span>
+                                    </div>
+
+                                    <div class="border-bottom border-dark p-3 d-flex justify-content-between">
+                                        <span class="text-white">Sat</span>
+                                        <span class="text-white">19</span>
+                                        <span class="down"><i class="fa-solid fa-caret-down"></i>19%</span>
+                                        <span class="text-white-50">
+                                            Fri
+                                            Sat
+                                        </span>
+                                    </div>
+
+                                    <div class="p-3 d-flex justify-content-between">
+                                        <span class="text-white">Sun</span>
+                                        <span class="text-white">663</span>
+                                        <span class="up"><i class="fa-solid fa-caret-up"></i>49%</span>
+                                        <span class="text-white-50">
+                                            Sat
+                                            Sun
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="order d-flex text-center bg-darkblue py-3">
+                                <div class="col-6">
+                                    <span class="text-primary fw-bold">ORDER</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-white-50 fw-bold">PROFIT</span>
+                                </div>
+                            </div>
+                            <div class="profit text-white d-flex text-center py-3 bg-blue">
+                                <div class="col-3">
+                                    <span>Marketplace</span>
+                                    <h6 class="fw-bold">3654</h6>
+                                </div>
+                                <div class="col-3">
+                                    <span>Last Month</span>
+                                    <h6 class="fw-bold">946</h6>
+                                </div>
+                                <div class="col-3">
+                                    <span>Last Week
+                                    </span>
+                                    <h6 class="fw-bold">654</h6>
+                                </div>
+                                <div class="col-3">
+                                    <span>Today</span>
+                                    <h6 class="fw-bold">230</h6>
+                                </div>
+                            </div>
+                            <div id="app">
+                                <div id="chart">
+                                <apexchart type="area" width="100%" height="650" :options="chartOptions" :series="series"></apexchart>
+                              </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9 bg-darkblue mt-3">
+                            <div class="contry border-bottom border-dark py-3">
+                                <span class="text-white ps-4">Country Orders Statistics</span>
+                            </div>
+                            <div class="hedding d-flex">
+                                <div class="col-7">
+                                    <div id="chartdiv"></div>
+                                </div>
+                                <div class="col-5 py-3 px-4">
+                                    <div class="content">
+                                        <span class="text-white-50">Selected Country/Region</span>
+                                        <h3 class="text-white fw-bold py-1">United States of <br>America</h3>
+                                    </div>
+                                    <div id="container-3" style="height: 279px"></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="contant bg-darkblue py-4 px-4">
+                            <span class="text-white fw-bold">Today’s Profit</span>
+                            <h2 class="text-white fw-bold">572,900</h2>
+                            <div class="progress bg-blue" style="height: 20px;">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"></div>
+                            </div>
+                            <p class="text-white-50 pb-4">Better than last week (70%)</p>
+                            <span class="text-white fw-bold">New Orders</span>
+                            <h2 class="text-white fw-bold">6,378</h2>
+                            <div class="progress bg-blue" style="height: 20px;">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 30%;"></div>
+                            </div>
+                            <p class="text-white-50 pb-4">Better than last week (30%)</p>
+                            <span class="text-white fw-bold">New Comments</span>
+                            <h2 class="text-white fw-bold">200</h2>
+                            <div class="progress bg-blue" style="height: 20px;">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 55%;"></div>
+                            </div>
+                            <p class="text-white-50">Better than last week (55%)</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-9 py-3 px-4 bg-darkblue">
+                            <h3 class="text-white fw-bold">Visitors Analytics</h3>
+                            <span class="text-white-50">Consumption</span>
+                            <div id="container-4" style="height: 278px"></div>
+                            <div id="container-5" style="height: 270px"></div>
+                        </div>
+                        <div class="col-3">
+                            <div class="content bg-darkblue py-3 px-4">
+                                <span class="text-white fw-bold">User Activity</span>
+                                <select
+                                    class="border-2 border-dark rounded-3 btn-darkblue text-light py-2 px-3">
+                                    <option>month</option>
+                                </select>
+                                <div class="new d-flex justify-content-between">
+                                    <div class="col-4">
+                                        <h4 class="pages text-secondary">Pages Visit</h4>
+                                    </div>
+                                    <div class="col-4 ps-2">
+                                        <h4 class="pages text-secondary">New visits, %</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mon bg-darkblue py-2 px-1">
+                                <div class="border-bottom border-dark pb-3 pt-3 px-3 d-flex justify-content-between">
+                                    <span class="text-white">1 Apr</span>
+                                    <span class="text-success">153</span>
+                                    <span class="up"><i class="fa-solid fa-caret-up"></i>2%</span>
+                                </div>
+                            </div>
+                            <div class="mon bg-darkblue py-2 px-1">
+                                <div class="border-bottom border-dark pb-3 pt-3 px-3 d-flex justify-content-between">
+                                    <span class="text-white">2 Apr</span>
+                                    <span class="text-success">545</span>
+                                    <span class="down"><i class="fa-solid fa-caret-down"></i>73%</span>
+                                </div>
+                            </div>
+                            <div class="mon bg-darkblue py-2 px-1">
+                                <div class="border-bottom border-dark pb-3 pt-3 px-3 d-flex justify-content-between">
+                                    <span class="text-white">3 Apr</span>
+                                    <span class="text-success">765</span>
+                                    <span class="up"><i class="fa-solid fa-caret-up"></i>63%</span>
+                                </div>
+                            </div>
+                            <div class="mon bg-darkblue py-2 px-1">
+                                <div class="border-bottom border-dark pb-3 pt-3 px-3 d-flex justify-content-between">
+                                    <span class="text-white">4 Apr</span>
+                                    <span class="text-success">464</span>
+                                    <span class="down"><i class="fa-solid fa-caret-down"></i>37%</span>
+                                </div>
+                            </div>
+                            <div class="mon bg-darkblue py-2 px-1">
+                                <div class="border-bottom border-dark pb-3 pt-3 px-3 d-flex justify-content-between">
+                                    <span class="text-white">5 Apr</span>
+                                    <span class="text-success">585</span>
+                                    <span class="up"><i class="fa-solid fa-caret-up"></i>83%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+
+    <script type="text/javascript">
+        var dom = document.getElementById('container');
+        var myChart = echarts.init(dom, 'light',{
+            renderer: 'canvas',
+            useDirtyRect: false
+        });
+        var app = {};
+
+        var option;
+
+        var xAxisData = [];
+        var data1 = [];
+        var data2 = [];
+        for (var i = 0; i < 100; i++) {
+            xAxisData.push('A' + i);
+            data1.push((Math.sin(i / 5) * (i / 5 - 10) + i / 6) * 5);
+            data2.push((Math.cos(i / 5) * (i / 5 - 10) + i / 6) * 5);
+        }
+        option = {
+            tooltip: {},
+            xAxis: {
+                data: xAxisData,
+                splitLine: {
+                    show: false
+                }
+            },
+            yAxis: {},
+            series: [
+                {
+                    name: 'bar',
+                    type: 'bar',
+                    data: data1,
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    animationDelay: function (idx) {
+                        return idx * 10;
+                    }
+                },
+                {
+                    name: 'bar2',
+                    type: 'bar',
+                    data: data2,
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    animationDelay: function (idx) {
+                        return idx * 10 + 100;
+                    }
+                }
+            ],
+            animationEasing: 'elasticOut',
+            animationDelayUpdate: function (idx) {
+                return idx * 5;
+            }
+        };
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+
+        window.addEventListener('resize', myChart.resize);
+    </script>
+
+    <script type="text/javascript">
+        var dom = document.getElementById('container-1');
+        var myChart = echarts.init(dom, null, {
+            renderer: 'canvas',
+            useDirtyRect: false
+        });
+        var app = {};
+
+        var option;
+
+        let base = +new Date(1988, 9, 3);
+        let oneDay = 24 * 3600 * 1000;
+        let data = [[base, Math.random() * 300]];
+        for (let i = 1; i < 20000; i++) {
+            let now = new Date((base += oneDay));
+            data.push([+now, Math.round((Math.random() - 0.5) * 20 + data[i - 1][1])]);
+        }
+        option = {
+            tooltip: {
+                trigger: 'axis',
+                position: function (pt) {
+                    return [pt[0], '10%'];
+                }
+            },
+            xAxis: {
+                type: 'time',
+                boundaryGap: false
+            },
+            yAxis: {
+                type: 'value',
+                boundaryGap: [0, '100%']
+            },
+            series: [
+                {
+                    name: 'Fake Data',
+                    type: 'line',
+                    smooth: true,
+                    symbol: 'none',
+                    areaStyle: {},
+                    data: data
+                }
+            ]
+        };
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+
+        window.addEventListener('resize', myChart.resize);
+    </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
+  
+    <script>
+    new Vue({
+      el: '#app',
+      components: {
+        apexchart: VueApexCharts,
+      },
+      data: {
+        
+        series: [{
+          name: 'series1',
+          data: [31, 40, 28, 51, 42, 109, 100]
+        }, {
+          name: 'series2',
+          data: [11, 32, 45, 32, 34, 52, 41]
+        }],
+        chartOptions: {
+          chart: {
+            height: 750,
+            type: 'area'
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            curve: 'smooth'
+          },
+          xaxis: {
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+          },
+          tooltip: {
+            x: {
+              format: 'dd/MM/yy HH:mm'
+            },
+          },
+        },
+        
+        
+      },
+      
+    })
+    </script>
+
+    <script src="js/indexs.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/worldLow.js"></script>
+    <script src="js/Animated.js"></script>
+    <script src="js/index.js"></script>
+
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+    <script type="text/javascript">
+        var dom = document.getElementById('container-3');
+        var myChart = echarts.init(dom, null, {
+          renderer: 'canvas',
+          useDirtyRect: false
+        });
+        var app = {};
+        
+        var option;
+    
+        option = {
+      dataset: {
+        source: [
+          ['score', 'amount', 'product'],
+          [89.3, 58212, 'Textiles'],
+          [68.1, 79146, 'Tables'],
+          [57.1, 78254, 'Lighting'],
+          [74.4, 41032, 'Furniture'],
+          [50.1, 12755, 'Sofas'],
+        ]
+      },
+      grid: { containLabel: true },
+      xAxis: { name: 'amount' },
+      yAxis: { type: 'category' },
+      series: [
+        {
+          type: 'bar',
+          encode: {
+            // Map the "amount" column to X axis.
+            x: 'amount',
+            // Map the "product" column to Y axis
+            y: 'product'
+          }
+        }
+      ]
+    };
+    
+        if (option && typeof option === 'object') {
+          myChart.setOption(option);
+        }
+    
+        window.addEventListener('resize', myChart.resize);
+      </script>
+
+    <script type="text/javascript">
+    var dom = document.getElementById('container-4');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [820, 932, 901, 934, 1290, 1330, 1320],
+      type: 'line',
+      areaStyle: {}
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+    </script>
+
+    <script type="text/javascript">
+    var dom = document.getElementById('container-5');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    top: '5%',
+    left: 'center'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      avoidLabelOverlap: false,
+      label: {
+        show: false,
+        position: 'center'
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: 40,
+          fontWeight: 'bold'
+        }
+      },
+      labelLine: {
+        show: false
+      },
+      data: [
+        { value: 1048, name: 'Search Engine' },
+        { value: 735, name: 'Direct' },
+        { value: 580, name: 'Email' },
+        { value: 484, name: 'Union Ads' },
+        { value: 300, name: 'Video Ads' }
+      ]
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+    </script>
+
+    <script src="js/popper.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
